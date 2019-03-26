@@ -25,12 +25,26 @@ export const Bar = styled.div`
   padding: 10px;
 
 `;
+
+export const SearchIcon = styled.div`
+  max-width:20px;
+  max-height:20px;
+  margin: 10px;
+  position: relative;
+  
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+}
+`;
 //---------------------PostContainer
-//----------------UserThumbnail
+
 export const UserThumbnail = styled.div`
   max-width:50px;
-  max-hieght:50px;
-  padding: 10px;
+  max-height:50px;
+  margin: 10px;
 
   img {
     max-width: 100%;
@@ -46,6 +60,8 @@ export const HeaderStyle = styled.div`
  h4{
    padding-left: 10px;
  }
+
+ 
 `;
 
 //----------------Post Image
@@ -56,7 +72,6 @@ export const Img = styled.div`
   img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 5px;
 }
 `;
 
@@ -67,35 +82,47 @@ border-radius: 3px;
 border: 2px solid grey;
 color: grey;
 margin: 10px auto;
-padding: 10px;
 &:hover {
   background:white;
 }
 `;
 
-export const Button = styled.button`
-background: transparent;
-border-radius: 3px;
-border: 2px solid palevioletred;
-color: palevioletred;
-margin: 0 1em;
-padding: 0.25em 1em;
-&:hover {
-  padding: 0.5em 2em;
-}
-
-${props =>
-  props.type === 'primary' &&
-  css`
-    background: palevioletred;
-    color: white;
-  `}
-`;
-
 //---------------------------Comment Section
+
+export const CommentContainer = styled.div`
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+  img{
+    margin:5px;
+    width:20px;
+    height:20px;
+  }
+`;
 
 export const UserComment = styled.div`
  display: flex;
- width: 300px;
+ width: 100%;
+ text-align: left;
+ p{
+   margin: 3px;
+ }
+`;
 
+export const NewComment = styled.div`
+ display: flex;
+ justify-content:space-between;
+ flex-wrap: wrap;
+ width: 100%;
+ border-top:1px solid grey;
+  form{
+    input{
+      margin:10px 0;
+      width:300px;
+      height:20px;
+      background:none;
+      border:none;
+
+    }
+  }
 `;

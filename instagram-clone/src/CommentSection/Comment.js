@@ -4,7 +4,7 @@ import {UserComment} from '../StyleComponents/StyledComponents';
 const Comment = props => {
     return(
         <UserComment>
-        <p className="comment">{props.comment.text}</p>{' '}<h4 className="user">-{props.comment.username}</h4>
+        <p><strong>{props.comment.username}</strong> {props.comment.text}</p>
         </UserComment>
     )
 };

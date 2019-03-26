@@ -11,7 +11,12 @@ const Post = props => {
                 username={props.post.username}
                 thumbnailUrl={props.post.thumbnailUrl}
             />
-            <Img><img src={props.post.imageUrl} alt={props.post.username}/></Img>
+            <Img>
+                <img 
+                src={props.post.imageUrl} 
+                alt={props.post.username}
+                />
+            </Img>
             <CommentSection 
                 postId={props.post.imageUrl}
                 comments={props.post.comments} 
