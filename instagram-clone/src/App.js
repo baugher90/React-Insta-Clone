@@ -8,27 +8,22 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      posts: dummyData,
+      posts: [],
       post:'',
     }
   }
 
   componentDidMount() {
-    this.getPosts(dummyData);
+    setTimeout(()=>{
+       this.setState({posts: dummyData});
+    }, 1000);
+    window.addEventListener('resize', () => {});
   }
 
-  getPosts = URL => {
-    fetch(URL)
-      .then(res => {
-        return res.json();
-      })
-      .then(data => {
-        this.setState({ posts: data.results });
-      })
-      .catch(err => {
-        new Error(err);
-      });
-  };
+  componentWillUnmount() {
+    window.removeEventListener('resize', () => {});
+  }
+
 
   render() {
     return (

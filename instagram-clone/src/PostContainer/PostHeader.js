@@ -1,11 +1,12 @@
 import React from 'react';
+import { UserThumbnail, HeaderStyle } from '../StyleComponents/StyledComponents';
 
 const PostHeader = props => {
     return(
-        <div className="">
-            <img src={props.thumbnailUrl} alt={props.username}/>
+        <HeaderStyle>
+            <UserThumbnail><img src={props.thumbnailUrl} alt={props.username}/></UserThumbnail>
             <h4>{props.username}</h4>
-        </div>
+        </HeaderStyle>
     )
 }
 
