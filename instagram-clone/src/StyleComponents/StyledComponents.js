@@ -28,12 +28,12 @@ export const Bar = styled.div`
   border-bottom: 2px solid #f0f0f0;
   margin: 10px auto;
   padding: 10px;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 5px 21px -5px rgba(0,0,0,0.63);
 
   form{
     input{
       text-align:center;
-      border-radious:4px;
+      border-radius:4px;
       border:1px solid #aaaaaa;
       background:#f9f9f9;
       width:200px;
@@ -113,6 +113,7 @@ border-radius: 3px;
 border: 2px solid #f0f0f0;
 color: grey;
 margin: 10px auto;
+box-shadow: 5px 5px 21px -5px rgba(0,0,0,0.63);
 &:hover {
   background:#f9f9f9;
 }
@@ -144,6 +145,7 @@ export const UserComment = styled.div`
 export const NewComment = styled.div`
  display: flex;
  justify-content:space-between;
+ align-items: center;
  flex-wrap: wrap;
  width: 100%;
  margin:5px 0;
@@ -152,9 +154,12 @@ export const NewComment = styled.div`
     input{
       margin:10px 0;
       width:300px;
-      height:20px;
+      height:90%;
       background:none;
       border:none;
+      &:hover {
+        box-shadow: 5px 5px 21px -5px rgba(0,0,0,0);
+      }
 
     }
   }
