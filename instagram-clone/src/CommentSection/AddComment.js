@@ -5,12 +5,15 @@ import {NewComment} from '../StyleComponents/StyledComponents';
 const AddComment = props => {
     return(
         <NewComment>
-            <form>
+            <form onSubmit={props.submitComment}>
                 <input
+                type="text"
+                value={props.comment}
                 placeholder="Add a comment..."
+                onChange={props.changeComment}
                 />
             </form>
-            <img src={threeDots} alt="add-comment"/>
+            <img src={threeDots} alt="add-comment" onClick={props.submitComment}/>
         </NewComment>
     )
 }

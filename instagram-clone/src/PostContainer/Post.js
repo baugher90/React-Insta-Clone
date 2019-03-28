@@ -20,6 +20,7 @@ const Post = props => {
             <CommentSection 
                 postId={props.post.imageUrl}
                 comments={props.post.comments} 
+                likes={props.post.likes}
             />
         </PostDiv>
     )

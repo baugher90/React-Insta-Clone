@@ -1,15 +1,47 @@
 import styled from 'styled-components';
 
 export const LoadAnimation = styled.div`
+  width: 100px;
   margin: 0 auto;
-  margin-top:50%;
+  margin-top:40%;
+
+  
+`;
+//---------------------Login
+export const LoginPage = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height:200px;
+  margin: 200px auto;
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    input {
+      width: 80%;
+      height:30px;
+      margin: 0 auto;
+    }
+  }
+`;
+
+export const Button = styled.button`
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  background: #3897F0;
+  border-radius: 5px;
+  &:hover{
+    border:2px solid #3897F9;
+  }
 `;
 
 //---------------------SearchBar
 export const Icon = styled.div`
   max-width:50px;
-  max-hieght:50px;
-  padding-right: 10px
+  max-height:50px;
+  padding-right: 10px;
   border-right: 2px solid #000000;
 
   img {
@@ -98,7 +130,7 @@ export const HeaderStyle = styled.div`
 //----------------Post Image
 export const Img = styled.div`
   max-width:100%;
-  max-hieght:100%;
+  max-height:100%;
 
   img {
     max-width: 100%;
@@ -112,7 +144,7 @@ background: #ffffff;
 border-radius: 3px;
 border: 2px solid #f0f0f0;
 color: grey;
-margin: 10px auto;
+margin: 30px auto;
 box-shadow: 5px 5px 21px -5px rgba(0,0,0,0.63);
 &:hover {
   background:#f9f9f9;
