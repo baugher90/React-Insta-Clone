@@ -34,6 +34,7 @@ export const Button = styled.button`
   border-radius: 5px;
   &:hover{
     border:2px solid #3897F9;
+    text
   }
 `;
 
